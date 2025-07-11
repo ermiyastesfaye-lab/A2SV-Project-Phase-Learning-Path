@@ -14,6 +14,6 @@ This is a simple Todo List web application. It allows users to add tasks, view t
 
 ## Screenshots
 
-![alt text](image/image.png)
-![alt text](image/image-1.png)
-![alt text](image/image-2.png)
+![alt text](images/image.png)
+![alt text](images/image-1.png)
+![alt text](images/image-2.png)
