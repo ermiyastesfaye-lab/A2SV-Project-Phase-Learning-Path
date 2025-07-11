@@ -12,7 +12,7 @@ form.addEventListener("submit", function (e) {
     span.className = "task-text";
 
     const editBtn = document.createElement("button");
-    editBtn.innerHTML = "&#9998;"; // Pencil icon
+    editBtn.innerHTML = "&#9998;";
     editBtn.className = "edit-btn";
     let editing = false;
     editBtn.onclick = function () {
