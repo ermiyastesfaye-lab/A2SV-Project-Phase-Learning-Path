@@ -49,24 +49,6 @@ export default function JobCard({
 
           <p className="text-sm text-gray-700 mb-3">{description}</p>
 
-          {/* Tags */}
-          <div className="flex gap-2 flex-wrap mb-2">
-            {tags.map((tag, i) => (
-              <span
-                key={i}
-                className={`text-xs px-3 py-1 rounded-full font-medium ${
-                  tag === "In Person"
-                    ? "bg-green-100 text-green-800"
-                    : tag === "Volunteer"
-                    ? "bg-yellow-100 text-yellow-800"
-                    : "bg-gray-100 text-gray-800"
-                }`}
-              >
-                {tag}
-              </span>
-            ))}
-          </div>
-
           {/* Required Skills (color coded) */}
           {Array.isArray(tags) && tags.length > 0 && (
             <div className="flex gap-2 flex-wrap mt-2">

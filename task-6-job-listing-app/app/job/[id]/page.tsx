@@ -27,8 +27,8 @@ export default function JobDescriptionPage({
   }
 
   return (
-    <main className="min-h-screen bg-gray-100 p-8">
-      <div className="max-w-5xl mx-auto bg-white border border-dashed border-blue-300 p-8 rounded-lg shadow-sm flex flex-col md:flex-row gap-8">
+    <main className="min-h-screen bg-gray-100 px-2 py-4 sm:px-4 md:px-8">
+      <div className="max-w-5xl mx-auto bg-white border border-dashed border-blue-300 p-4 sm:p-6 md:p-8 rounded-lg shadow-sm flex flex-col md:flex-row gap-8">
         {/* Left: Main Description */}
         <div className="flex-1">
           {job.image && (
@@ -38,10 +38,12 @@ export default function JobDescriptionPage({
               className="w-16 h-16 rounded-full mb-4 object-cover border border-gray-200"
             />
           )}
-          <h2 className="text-xl font-bold text-gray-800 mb-4">Description</h2>
+          <h2 className="text-lg sm:text-xl font-bold text-gray-800 mb-4">
+            Description
+          </h2>
           <p className="text-gray-700 mb-6">{job.description}</p>
 
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
             Responsibilities
           </h3>
           <ul className="mb-6 list-none space-y-2">
@@ -53,7 +55,7 @@ export default function JobDescriptionPage({
             ))}
           </ul>
 
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
             Ideal Candidate we want
           </h3>
           <ul className="mb-6 list-none space-y-2">
@@ -69,7 +71,7 @@ export default function JobDescriptionPage({
             ))}
           </ul>
 
-          <h3 className="text-lg font-semibold text-gray-800 mb-2">
+          <h3 className="text-base sm:text-lg font-semibold text-gray-800 mb-2">
             When & Where
           </h3>
           <div className="flex items-center gap-2 text-gray-700">
@@ -79,10 +81,10 @@ export default function JobDescriptionPage({
         </div>
 
         {/* Right: Sidebar */}
-        <aside className="w-full md:w-80 flex-shrink-0">
+        <aside className="w-full md:w-80 flex-shrink-0 mt-8 md:mt-0">
           <div className="mb-6">
             <h4 className="font-semibold text-gray-800 mb-2">About</h4>
-            <ul className="text-sm text-gray-700 space-y-2">
+            <ul className="text-xs sm:text-sm text-gray-700 space-y-2">
               <li>
                 <span className="font-medium text-gray-500">Posted On</span>{" "}
                 <span className="ml-2">{job.about?.posted_on}</span>
