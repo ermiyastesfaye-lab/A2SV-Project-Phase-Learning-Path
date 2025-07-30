@@ -29,6 +29,30 @@ The main files and folders include:
 - Start the development server with `npm run dev`.
 - Open http://localhost:3000 in your browser to use the app.
 
+## Testing
+
+This project uses Cypress for end-to-end testing.
+
+To run the tests:
+
+- Make sure the development server is running (`npm run dev`).
+- In a new terminal, run `npx cypress open` to launch the Cypress Test Runner, or `npx cypress run` to run all tests in headless mode.
+- Tests are located in the `cypress/e2e/` directory.
+
+You may need to update the test credentials in `cypress/support/commands.js` to match a valid user in your database.
+
+## Unit Testing
+
+This project also uses Jest for unit testing React components and utility functions.
+
+To run the Jest tests:
+
+- Make sure dependencies are installed (`npm install`).
+- Run `npm test` or `npx jest` in the project folder.
+- Test files are typically located alongside the components or in the `__tests__/` directory.
+
+You can configure or add more tests in the `jest.config.js` file and by creating files with the `.test.ts` or `.test.tsx` extension.
+
 ## Screenshots
 
 ![alt text](image-3.png)
