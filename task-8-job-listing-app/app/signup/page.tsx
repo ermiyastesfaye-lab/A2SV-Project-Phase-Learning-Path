@@ -32,7 +32,7 @@ export default function SignupPage() {
       email: form.email,
       password: form.password,
       confirmPassword: form.confirmPassword,
-      role: form.role,
+      role: "user",
     };
     try {
       const result = await signup(user).unwrap();

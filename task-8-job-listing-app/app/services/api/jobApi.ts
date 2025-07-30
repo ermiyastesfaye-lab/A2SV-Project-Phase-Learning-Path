@@ -30,7 +30,7 @@ export const jobApi = createApi({
       }
     >({
       query: (body) => ({
-        url: "/signup",
+        url: "/verify-email",
         method: "POST",
         body,
       }),
